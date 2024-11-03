@@ -1,0 +1,162 @@
+/* 全体の背景色 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.home_txt {
+  font-family: "MS Mincho", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif; /* 明朝体フォントを指定 */
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+/* 蛙化BotとLinebot, Discordbotのセクションのスタイル */
+.background-section {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LinebotとDiscordbotの横並びセクションのスタイル */
+.background-section-horizontal {
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  background-color: #FFF3DE;
+  min-height: 45vh; /* 最小の高さを45vhに設定 */
+  max-height: 100vh; /* 最大の高さを100vhに設定 */
+  width: 100%; /* 横幅を画面全体に設定 */
+  position: relative; /* 相対位置指定 */
+}
+
+/* 画面の幅が768px以上の場合（PC用） */
+@media (min-width: 768px) {
+  .background-section-horizontal {
+    min-height: 60vh; /* PC画面の高さを60vhに設定 */
+  }
+}
+
+/* 画面の幅が1024px以上の場合（大型PC用） */
+@media (min-width: 1024px) {
+  .background-section-horizontal {
+    min-height: 75vh; /* 大型PCの高さを70vhに設定 */
+  }
+}
+
+/* アイコンとテキストの共通スタイル */
+.icon-image {
+  width: 25vw; /* ビューポートの幅の25%に設定してサイズを縮小 */
+  height: auto; /* アスペクト比を保つために自動設定 */
+  max-width: 300px; /* 画像の最大サイズを300pxに調整 */
+  min-width: 100px; /* 画像の最小サイズを100pxに設定 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* シャドウの追加 */
+  cursor: pointer; /* カーソルを手のマークに変更 */
+}
+
+/* スマートフォン用の角丸設定 */
+@media (max-width: 480px) {
+  .icon-image {
+    border-radius: 25px; /* スマホでの角丸を小さく設定 */
+  }
+}
+
+/* タブレット用の角丸設定 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .icon-image {
+    border-radius: 45px; /* タブレット用に角丸を調整 */
+  }
+}
+
+/* PC用の角丸設定 */
+@media (min-width: 769px) {
+  .icon-image {
+    border-radius: 75px; /* PCでの角丸を指定 */
+  }
+}
+
+
+
+
+/* 蛙化判定Botのテキストスタイル */
+.frog-title {
+  font-size: 6vw; /* ビューポートの幅の6%を基にフォントサイズを設定 */
+  max-font-size: 80px; /* 最大フォントサイズを80pxに設定 */
+  min-font-size: 28px; /* 最小フォントサイズを28pxに設定 */
+  text-align: center; /* テキストを中央揃え */
+  width: 100%; /* 蛙アイコンの横幅に収める */
+}
+
+
+/* 蛙化判定Botのアイコンのスタイル */
+.frog-icon {
+  width: 50vh; /* 画面の高さの50%を使用 */
+  height: auto; /* アスペクト比を保ちながら自動で高さ調整 */
+  max-width: 150%; /* 横幅が画面幅を超えないように最大幅を設定 */
+}
+
+
+/* テキストのサイズを相対的に設定 */
+.title {
+  font-family: 'Comic Sans MS';
+  font-size: 5vw; /* ビューポートの幅の5%に基づいたフォントサイズを設定 */
+  max-font-size: 60px; /* フォントの最大サイズを60pxに拡大 */
+  min-font-size: 20px; /* フォントの最小サイズを20pxに設定 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* ここをタップしてくださいセクションのスタイル */
+.tap-here-section {
+  background-color: white;
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tap-text {
+  font-size: 1.2em;
+  color: #333; /* 視認性の良い色 */
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.down-arrow {
+  font-size: 2em;
+  color: #333;
+}
+
+
+.LineButton {
+  background-color: #5865F2; /* 修正: プロパティ名を小文字に変更 */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dicordButton {
+  background-color: #5865F2; /* 修正: プロパティ名を小文字に変更 */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.haiku-line {
+  display: block; /* 各行をブロック要素にする */
+  text-indent: 1em; /* インデントの基本設定 */
+}
+
+.haiku-line:nth-child(1) {
+  text-indent: 0; /* 最初の行はインデントなし */
+}
+
+.haiku-line:nth-child(2) {
+  text-indent: 6em; /* 2番目の行にインデントを追加 */
+}

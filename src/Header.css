@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+.header {
+    width: 100vw;
+    background-color: rgb(90, 145, 83); /* 背景色 */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.header-content {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-icon {
+    width: 30px; /* アイコンの幅 */
+    height: 30px; /* アイコンの高さ */
+    margin-right: 10px; /* アイコンとタイトルの間に余白 */
+}
+
+.header-title {
+    
+    font-family: 'Hachi Maru Pop', cursive; /* ニクキュウフォントを適用 */
+    font-size: 2rem;
+    color: #333; /* 適宜色を変更 */
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin: 0;
+}
